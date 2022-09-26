@@ -9,5 +9,5 @@ def solution(participant, completion):
         
     for x in completion:
         h_sum-=hash(x)
-            
+    ##asdfasda  
     return h_dic[h_sum]
