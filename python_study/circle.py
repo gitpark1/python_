@@ -15,8 +15,16 @@ class Circle:
 
     def __str__(self):
         return 'rad= {}, Area= {}'.format(self.__rad,math.pi*self.__rad*self.__rad)
+
+    def __eq__(self,other):
+        return self.__rad==other.__rad
+    
+
+
 c=Circle(10)
+b=Circle(9)
 print(c.getRad())
 print(c.calcArea())
 print(c)
+print(c==b)
 
