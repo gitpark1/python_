@@ -1,5 +1,5 @@
-from asyncio.constants import SENDFILE_FALLBACK_READBUFFER_SIZE
 import math
+
 class Circle:
     def __init__(self,rad=1.0):
         self.__rad=rad      #private
@@ -11,13 +11,12 @@ class Circle:
         return self.__rad
 
     def calcArea(self):
-        return math.pi*self.__rad*SENDFILE_FALLBACK_READBUFFER_SIZE
+        return math.pi*self.__rad*self.__rad
 
-    def calcCircum(self):
-        return 2.0*math.pi*self.__rad
-
-c1 = Circle(10)
-print(c1.getRad())
-print(c1.calcArea())
-print(c1.calcCircum())
+    def __str__(self):
+        return 'rad= {}, Area= {}'.format(self.__rad,math.pi*self.__rad*self.__rad)
+c=Circle(10)
+print(c.getRad())
+print(c.calcArea())
+print(c)
 
