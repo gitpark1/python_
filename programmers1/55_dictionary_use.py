@@ -16,8 +16,6 @@ def solution(survey, choices):
     
     
     return ans
-solution(["AN", "CF", "MJ", "RT", "NA"],[5, 3, 2, 7, 5])
-
 """
 def solution(survey, choices):
     answer = ''
@@ -39,5 +37,6 @@ def solution(survey, choices):
     else: answer+="N"
 
 
-    return answer
-    """
+    return answer"""
+solution(["AN", "CF", "MJ", "RT", "NA"],[5, 3, 2, 7, 5])
+
