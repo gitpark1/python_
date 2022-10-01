@@ -1,6 +1,6 @@
 class Monostate:
-    __shared_state={'a':13}
-    __test=5
+    __shared_state={'a':13}     #이건 private이 아닌가?
+    
     def __init__(self):
         self.__dict__=self.__shared_state
     #본래 __dict__는 객체의 변수에 대한 값을 딕셔너리 형태로 보유하는 속성
