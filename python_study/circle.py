@@ -30,4 +30,4 @@ print(c.getRad())
 print(c.calcArea())
 print(c)
 print(c==b)
-print(c.object_type)
+
