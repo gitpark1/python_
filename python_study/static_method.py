@@ -6,7 +6,7 @@ class Calc:
     
     @classmethod        #classmethod의 경우 cls 사용(self와 유사한 변수) cls로 클래스 속성에 접근
     def print_count(cls):
-        print('{}번 생성. num = {}'.format(cls.count,cls.num))
+        print('{}번 생성. num = {}'.format(cls.count))
 
     @staticmethod       #staic이라서 self사용 X
     def add(a,b):
