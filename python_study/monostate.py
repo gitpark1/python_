@@ -12,7 +12,7 @@ b2=Monostate()
 
 b1.a=44
 b1.b=33
-print(b1.test)
+
 print('object b1:',b1)
 print('object b2:',b2)
 

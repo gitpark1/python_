@@ -1,5 +1,5 @@
 class Singleton:
-    def __init__(cls):
+    def __new__(cls):
         if not hasattr(cls,'instance'):  #instance라는 속성이 없다면
             print('make instance')
             cls.instance=super().__new__(cls)   #super -> object?
