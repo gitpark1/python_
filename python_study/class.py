@@ -6,6 +6,7 @@ class test:
         print(self.__dict__)
         self.__dict__={'A':12,'B':20}
 
+
 c=test()
 c.test2()
 c.test2()
